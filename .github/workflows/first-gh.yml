@@ -1,10 +1,13 @@
 name: first workflow
 on: workflow_dispatch
+env: 
+  Day_of_month: 1-8-2013
 jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
       - name: Print Greeting
-        run: echo "Hello World!"
+        run: echo "Hello World! $Day_of_month"
+      
         
     
